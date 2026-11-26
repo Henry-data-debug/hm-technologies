@@ -24,6 +24,24 @@ const navbar = document.querySelector("[data-navbar]");
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 
+/**
+ * Hero Background Presentation Crossfade Slider
+ */
+const initHeroBgSlider = function () {
+  const slides = document.querySelectorAll(".hero-bg-slide");
+  if (!slides || slides.length <= 1) return;
+
+  let currentIndex = 0;
+  const intervalTime = 5500; // 5.5s gentle luxury crossfade
+
+  setInterval(function () {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add("active");
+  }, intervalTime);
+};
+
+initHeroBgSlider();
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   navToggler.classList.toggle("active");
