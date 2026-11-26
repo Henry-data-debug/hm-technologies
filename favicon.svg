@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <!-- Background rounded rect gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- Gunmetal gradient for H -->
+    <linearGradient id="favGunmetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+
+    <!-- Rose-Gold / Copper for M -->
+    <linearGradient id="favCopper" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2785c" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#e8a588" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- EMBLEM SCALED & CENTERED -->
+  <g transform="translate(1, 4)">
+    <!-- H left pillar -->
+    <path d="M 8 16 L 15 16 L 15 48 L 8 48 Z" fill="url(#favGunmetal)" />
+    <!-- H crossbar -->
+    <path d="M 15 29 L 24 29 L 24 35 L 15 35 Z" fill="url(#favGunmetal)" />
+    <!-- H right pillar (interlocking) -->
+    <path d="M 23 21 L 29 21 L 29 48 L 23 48 Z" fill="url(#favGunmetal)" />
+
+    <!-- M Left Wing & Ascending Arrow -->
+    <path d="M 19 48 L 25 36 L 31 22 L 34 8 L 37 22 L 43 36 L 49 48 L 44 48 L 39 36 L 34 18 L 29 36 L 24 48 Z" fill="url(#favCopper)" />
+    
+    <!-- Arrow Head Peak -->
+    <polygon points="34,5 28,15 40,15" fill="#f59e0b" />
+    
+    <!-- M Right Pillar -->
+    <path d="M 45 22 L 52 16 L 57 16 L 57 48 L 51 48 L 51 26 Z" fill="url(#favCopper)" />
+
+    <!-- Tech Circuit Nodes (Blue Gems) -->
+    <circle cx="28" cy="29" r="2.2" fill="#0066ff" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="34" cy="20" r="2.2" fill="#0066ff" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="34" cy="11" r="2.2" fill="#38bdf8" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="40" cy="29" r="2.2" fill="#0066ff" stroke="#ffffff" stroke-width="0.8" />
+    <line x1="28" y1="29" x2="34" y2="20" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
+    <line x1="34" y1="20" x2="34" y2="11" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
+    <line x1="34" y1="20" x2="40" y2="29" stroke="#ffffff" stroke-width="0.8" opacity="0.9" />
+  </g>
+</svg>
